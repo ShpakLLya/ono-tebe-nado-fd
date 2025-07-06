@@ -1,1 +1,1 @@
-Ono tebe nado chitat` README k uchebnomu proektu?))))
+https://github.com/ShpakLLya/ono-tebe-nado
