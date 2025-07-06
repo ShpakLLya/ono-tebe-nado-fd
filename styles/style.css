@@ -233,9 +233,6 @@
     text-transform: uppercase;
 }
 
-/*.about_column_text {
-    padding-left: 25px;
-}*/
 .about_text_gap {
     display: flex;
     flex-direction: column;
@@ -286,6 +283,11 @@
     list-style: none;
     border: 0;
 }
+
+.active_link {
+    border: none;
+}
+
 
 .footer_social {
     display: flex;
