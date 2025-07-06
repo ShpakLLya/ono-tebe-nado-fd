@@ -1,0 +1,1 @@
+Ono tebe nado chitat` README k uchebnomu proektu?))))
