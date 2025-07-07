@@ -1,7 +1,7 @@
 /* место для вашего кода */
 .header {
     display: grid;
-    grid-template-columns:1fr 125px 1fr;
+    grid-template-columns:1fr 135px 1fr;
     align-items: center;
     height: 290px;
     font-size: 18px;
@@ -10,13 +10,13 @@
 
 .header_menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .header_links_list {
     display: flex;
     flex-direction: row;
-    gap: 26px;
+    gap: 15px 30px;
 }
 
 .header_links_item {
@@ -33,17 +33,28 @@
     display: inline-block;
 }
 
+.address_header{
+    padding-right: 30px;
+}
+
 .address_header .adress_list {
     display: flex;
     flex-direction: column;
+    gap: 3px;
+    line-height: 23px;
     align-items: start;
     justify-self: end;
     max-width: 210px;
+    font-style: normal;
+}
+
+.adress_link_text{
+    border-bottom:1px solid black ;
 }
 
 .cover {
     position: relative;
-    z-index: -1;
+    z-index: 0;
     min-height: 757px;
     background-image: url(../images/cover.jpg);
     background-size: cover;
@@ -87,8 +98,18 @@
     align-self: center;
 }
 
+.text_center {
+    position:relative;
+    left: 15px;
+}
+
 .cover_main_title_text_end {
     align-self: end;
+}
+
+.text_end {
+    position:relative;
+    left: 30px;
 }
 
 .cover_description {
@@ -97,7 +118,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    gap:0 100px;
+    gap: 0 100px;
     padding: 50px;
 }
 
@@ -107,12 +128,22 @@
 }
 
 .bet_button {
+    position: relative;
+    z-index: 1;
     font-size: 22px;
     padding:12px 32px;
     text-transform: uppercase;
     background-color: transparent;
     color: white;
     border: 1px solid white;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s, transform 0.5s;
+}
+
+.bet_button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(110%);
 }
 
 .lots {
@@ -193,7 +224,11 @@
 .lots_look_more {
     font-size: 20px;
     padding: 30px 0 0 40px;
-    
+    transition: transform 0.5s;
+}
+
+.lots_look_more:hover {
+    transform: scale(110%);
 }
 
 .lots_look_more_text {
@@ -255,14 +290,18 @@
 .address_footer .adress_list {
     display: flex;
     flex-direction: column;
+    gap:10px 0;
     align-items: start;
     justify-self: start;
-    max-width: 210px;
+    max-width: 250px;
+    font-style: normal;
+    letter-spacing: 1px;
 }
 
 .footer_menu {
     display: flex;
     justify-content: center;
+    line-height: 23px;
 }
 
 .footer_menu_lists {
@@ -304,5 +343,9 @@
 
 .footer_social_link_logo {
     height: 48px;
+    transition: transform 0.5s;
 }
 
+.footer_social_link_logo:hover {
+    transform: scale(1.2);
+}
