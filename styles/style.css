@@ -33,7 +33,7 @@
     display: inline-block;
 }
 
-.address_header{
+.address_header {
     padding-right: 30px;
 }
 
@@ -48,7 +48,7 @@
     font-style: normal;
 }
 
-.adress_link_text{
+.adress_link_text {
     border-bottom:1px solid black ;
 }
 
