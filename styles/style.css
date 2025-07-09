@@ -19,6 +19,10 @@
     gap: 15px 30px;
 }
 
+.header_links_item_last {
+    padding-left: 7px;
+ }
+
 .header_links_item {
     list-style: circle;
     border-bottom: 1px solid black;
@@ -147,6 +151,8 @@
 }
 
 .lots_title {
+    position: relative;
+    z-index: 2;
     font-size: 40px;
     padding: 0 0 27px 40px;
     text-transform: uppercase;
@@ -162,13 +168,17 @@
 
 .lots_list_item {
     position: relative;
-
     width: 334px;
     min-height: 596px;
     color: white;
     padding: 48px 40px;
     background-size: cover;
     background-position: center;
+    transition: transform 0.5s;
+}
+
+.lots_list_item:hover {
+    transform: scale(1.13);
 }
 
 .card_link {
@@ -226,15 +236,16 @@
 .lots_look_more {
     font-size: 20px;
     padding: 30px 0 0 40px;
-    transition: transform 0.5s;
-}
-
-.lots_look_more:hover {
-    transform: scale(110%);
 }
 
 .lots_look_more_text {
+    display: inline-block;
     border-bottom: 1px solid black;
+    transition: transform 0.5s;
+}
+
+.lots_look_more_text:hover{
+    transform: scale(1.15);
 }
 
 .about {
@@ -292,12 +303,11 @@
 .address_footer .adress_list {
     display: flex;
     flex-direction: column;
-    gap:10px 0;
+    line-height: 24.3px;
     align-items: start;
     justify-self: start;
     max-width: 250px;
     font-style: normal;
-    line-height: 18px;
     
 }
 
@@ -321,9 +331,6 @@
     line-height: 15px;
 }
 
-.more_space {
-    line-height: 218x;
-}
 
 .footer_menu_link {
   border-bottom: 1px solid black;
@@ -358,5 +365,5 @@
 }
 
 .footer_social_link_logo:hover {
-    transform: scale(1.2);
+    transform: scale(1.4);
 }
