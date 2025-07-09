@@ -10,7 +10,7 @@
 .header_menu {
     display: flex;
     justify-content: space-between;
-    padding: 35px 0px 138px 0;
+    padding: 40px 0px 135px 0;
 }
 
 .header_links_list {
@@ -39,14 +39,14 @@
 }
 
 .address_header {
-    padding:0px 30px 100px 0;
+    padding:5px 30px 97px 0;
 }
 
 .address_header .adress_list {
     display: flex;
     flex-direction: column;
-    gap: 3px;
-    line-height: 23px;
+    
+    line-height: 24.3px;
     align-items: start;
     justify-self: end;
     max-width: 210px;
@@ -244,7 +244,7 @@
     transition: transform 0.5s;
 }
 
-.lots_look_more_text:hover{
+.lots_look_more_text:hover {
     transform: scale(1.15);
 }
 
